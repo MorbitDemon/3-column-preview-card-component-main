@@ -1,0 +1,144 @@
+html {
+  --color-primary-500: hsl(31, 77%, 52%);
+  --color-primary-600: hsl(184, 100%, 22%);
+  --color-primary-800: hsl(179, 100%, 13%);
+
+  --color-neutral-200: hsla(0, 0%, 100%, 0.75); /* Paragraphs */
+  --color-neutral-100: hsl(0, 0%, 95%); /*background, headings, buttons*/
+
+  --font-primary: "Big Shoulders Display", cursive; /*Headings*/
+  --font-secundary: "Lexend Deca", sans-serif; /*Body*/
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  left: 0;
+  font-family: var(--font-secundary);
+}
+
+#grid-container {
+  max-width: 90%;
+  margin: 2.5rem auto;
+
+  border-radius: 10px;
+  overflow: auto;
+}
+
+#sedans,
+#suvs,
+#luxury {
+  padding: 2rem 3rem;
+}
+
+#sedans {
+  background-color: var(--color-primary-500);
+}
+
+#suvs {
+  background-color: var(--color-primary-600);
+}
+
+#luxury {
+  background-color: var(--color-primary-800);
+}
+
+h2 {
+  font-family: var(--font-primary);
+  color: var(--color-neutral-100);
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+p {
+  color: var(--color-neutral-200);
+  line-height: 1.8;
+}
+
+p,
+a {
+  font-size: 0.9rem;
+}
+
+#grid-container a {
+  background-color: var(--color-neutral-100);
+  text-decoration: none;
+  padding: 0.7rem 2rem;
+  border-radius: 20px;
+  display: inline-block;
+  margin: 0.7rem auto;
+  border: 2px solid var(--color-neutral-100);
+  transition: all 0.3s ease-in;
+}
+
+#grid-container a:hover {
+  color: var(--color-neutral-100);
+}
+
+#sedans a {
+  color: var(--color-primary-500);
+}
+
+#sedans a:hover {
+  background-color: var(--color-primary-500);
+}
+
+#suvs a {
+  color: var(--color-primary-600);
+}
+
+#suvs a:hover {
+  background-color: var(--color-primary-600);
+}
+
+#luxury a {
+  color: var(--color-primary-800);
+}
+
+#luxury a:hover {
+  background-color: var(--color-primary-800);
+}
+
+.attribution {
+  margin-top: 15rem;
+  font-size: 16px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 61rem) {
+  #grid-container {
+    max-width: 75%;
+    min-height: 35rem;
+    margin-top: 10rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 2fr));
+    
+  }
+
+  #sedans,
+  #suvs,
+  #luxury {
+    position: relative;
+    padding: 3rem 4rem;
+  }
+
+  #grid-container a {
+    position: absolute;
+    bottom: 2.35rem;
+    left: 4.1rem;
+  }
+}
+
+@media (min-width: 75rem){
+  h2{
+    font-size: 2.5rem;
+  }
+
+  p,
+  a{
+    font-size: 1rem;
+  }
+}
