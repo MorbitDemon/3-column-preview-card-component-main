@@ -31,7 +31,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [https://morbitdemon.github.io/3-column-preview-card-component-main/](https://your-live-site-url.com)
+- Live Site URL: [https://morbitdemon.github.io/3-column-preview-card-component-main/](https://morbitdemon.github.io/3-column-preview-card-component-main/)
 
 ## My process
 - Built the HTML structure.
